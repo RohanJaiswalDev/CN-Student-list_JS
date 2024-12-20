@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodingNest | Student List Assignment</title>
+    <!-- Axios CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.8/axios.min.js"
+        integrity="sha512-v8+bPcpk4Sj7CKB11+gK/FnsbgQ15jTwZamnBf/xDmiQDcgOIYufBo6Acu1y30vrk8gg5su4x0CG3zfPaq5Fcg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- Favicon File -->
+        <link rel="shortcut icon" href="Favicon.jpeg" type="image/x-icon">
+        <!-- Css File -->
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h2>List Of Students</h2>
+            <form id="form-box">
+                <!-- Input Area --> 
+                <div class="input-groups">
+                    <label for="roll">Roll No:</label>
+                    <input type="number" id="rollno" name="roll" placeholder="Enter Your Roll No">
+                </div>
+                <div class="input-groups">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="fname" name="name" placeholder="Enter Your First Name">
+                </div> 
+                <div class="input-groups">
+                    <label for="name">Last Name:</label>
+                    <input type="text" id="lname" name="name" placeholder="Enter Your Last Name">
+                </div>
+                <div class="input-groups">
+                    <label for="course">Course:</label>
+                    <input type="text" id="course" name="course" placeholder="Enter Your Course">
+                </div>
+                <div class="input-groups">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Your Email">
+                </div>
+                <!-- Button -->
+                <button id="btn">
+                    <span class="button-text">Add Students</span>
+                    <div class="spinner hidden"></div>
+                </button>
+            </form>
+        </div>
+        <!-- list of students -->
+        <div class="student-list">
+            <h2>CodingNest Students List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Roll No:</th>
+                        <th>First Name:</th>
+                        <th>Last Name:</th>
+                        <th>Course:</th>
+                        <th>Email:</th>
+                    </tr>
+                </thead>
+                <tbody id="student-tbody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Script File -->
+    <script src="script.js"></script>
+    <!-- Sweet Alert Js File -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>

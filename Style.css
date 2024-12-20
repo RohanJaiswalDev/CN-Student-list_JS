@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 1000px;
+    margin: 20px auto auto auto;
+}
+
+.form-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.input-groups {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-groups label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.input-groups input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="text"] {
+    text-transform: capitalize;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000000b7;
+}
+
+/* Spinner CSS */
+.spinner {
+    width: 20px;
+    height: 20px;
+    border: 3px solid transparent;
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.student-list {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    text-align: left;
+    padding: 8px;
+    font-weight: 500;
+}
+
+thead {
+    background-color: #000000;
+    color: white;
+}
+
+thead th {
+    padding: 10px;
+    font-size: 1rem;
+    text-align: left;
+}
+
+tbody td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .input-groups input {
+        padding: 8px;
+        font-size: 1rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 1.1rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    thead th {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .input-groups input {
+        padding: 6px;
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    table,
+    thead th {
+        font-size: 0.8rem;
+    }
+}
